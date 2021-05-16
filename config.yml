@@ -1,0 +1,28 @@
+FRIENDLY_NAME: 'base'  # Rename this in running
+SUMMARY: True
+SAVE: False
+RANDOM: False
+CUDA: True
+CUDNN: False
+GPU: 0
+
+# resume
+RESUME: False
+DUMPER_PATH: ''  # pickle file
+
+# dataset
+IMG_SHAPE: [256, 256]
+BATCH_SIZE: 1
+TRAIN_FILELIST: './part/train.npy'
+VAL_FILELIST: './part/val.npy'
+TEST_FILELIST: './part/test.npy'
+RAM_DATASET: False
+
+# train
+CHANNAL_GEN: 32
+EPOCHS_LIMIT: 500
+SUMMARY_PER_EPOCHS: 1
+LR: 1e-4
+BETA: [0.5, 0.999]
+CHECKPOINT: 50
+GEN_TRAIN_RATE: 3
